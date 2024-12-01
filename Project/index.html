@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trailblazer</title>
+    <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css" />
+    <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCgqyG_lZyJ28gnl-5EKzQDUwF4gKeMFDQ&callback=initAutocomplete&libraries=places"></script>
+    <link href='https://fonts.googleapis.com/css?family=Rubik' rel='stylesheet'>
+
+</head>
+<body>
+    <section class="pyscript">
+        <div id="container"></div>
+        <py-script src="/static/fix.py"></py-script>
+
+    </section>
+    <script>
+        window.initAutocomplete = function() {
+            var inputs = document.querySelectorAll('.place-input');
+            inputs.forEach(function(input) {
+                new google.maps.places.Autocomplete(input, { types: ['(cities)'] });
+            });
+        };
+        </script>
+</body>
+</html>
