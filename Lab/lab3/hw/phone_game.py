@@ -1,0 +1,208 @@
+# -*- coding: utf-8 -*-
+
+################################################################################
+## Form generated from reading UI file 'phone_game.ui'
+##
+## Created by: Qt User Interface Compiler version 6.6.0
+##
+## WARNING! All changes made in this file will be lost when recompiling UI file!
+################################################################################
+
+from PySide6.QtCore import (QCoreApplication, QDate, QDateTime, QLocale,
+    QMetaObject, QObject, QPoint, QRect,
+    QSize, QTime, QUrl, Qt)
+from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
+    QFont, QFontDatabase, QGradient, QIcon,
+    QImage, QKeySequence, QLinearGradient, QPainter,
+    QPalette, QPixmap, QRadialGradient, QTransform)
+from PySide6.QtWidgets import (QApplication, QComboBox, QLabel, QLineEdit,
+    QPushButton, QSizePolicy, QWidget)
+
+class Ui_Form(object):
+    def setupUi(self, Form):
+        if not Form.objectName():
+            Form.setObjectName(u"Form")
+        Form.resize(400, 700)
+        Form.setMinimumSize(QSize(400, 700))
+        Form.setMaximumSize(QSize(400, 700))
+        self.home_background = QLabel(Form)
+        self.home_background.setObjectName(u"home_background")
+        self.home_background.setGeometry(QRect(0, 600, 400, 100))
+        self.home_background.setMinimumSize(QSize(400, 100))
+        self.home_background.setMaximumSize(QSize(400, 100))
+        self.home_background.setStyleSheet(u"background-color: rgb(98, 98, 98);")
+        self.home_app = QPushButton(Form)
+        self.home_app.setObjectName(u"home_app")
+        self.home_app.setGeometry(QRect(160, 610, 80, 80))
+        self.home_app.setMinimumSize(QSize(80, 80))
+        self.home_app.setMaximumSize(QSize(80, 80))
+        self.home_app.setStyleSheet(u"QPushButton {\n"
+"    border-radius: 1px;\n"
+"}\n"
+"")
+        icon = QIcon()
+        icon.addFile(u"pic/home_logo.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.home_app.setIcon(icon)
+        self.home_app.setIconSize(QSize(80, 80))
+        self.home_background_2 = QLabel(Form)
+        self.home_background_2.setObjectName(u"home_background_2")
+        self.home_background_2.setGeometry(QRect(0, 0, 400, 600))
+        self.home_background_2.setMinimumSize(QSize(400, 600))
+        self.home_background_2.setMaximumSize(QSize(400, 600))
+        self.home_background_2.setStyleSheet(u"\n"
+"background-color: rgb(161, 161, 161);")
+        self.head_label = QLabel(Form)
+        self.head_label.setObjectName(u"head_label")
+        self.head_label.setGeometry(QRect(50, 40, 300, 50))
+        self.head_label.setMinimumSize(QSize(300, 50))
+        self.head_label.setMaximumSize(QSize(300, 50))
+        font = QFont()
+        font.setFamilies([u"Verdana"])
+        font.setPointSize(22)
+        self.head_label.setFont(font)
+        self.head_label.setLayoutDirection(Qt.LeftToRight)
+        self.head_label.setScaledContents(True)
+        self.head_label.setAlignment(Qt.AlignCenter)
+        self.number_input = QLineEdit(Form)
+        self.number_input.setObjectName(u"number_input")
+        self.number_input.setGeometry(QRect(120, 170, 160, 60))
+        self.number_input.setMinimumSize(QSize(160, 60))
+        self.number_input.setMaximumSize(QSize(160, 60))
+        font1 = QFont()
+        font1.setFamilies([u"Verdana"])
+        font1.setPointSize(18)
+        self.number_input.setFont(font1)
+        self.number_input.setStyleSheet(u"background-color: rgb(182, 182, 182);\n"
+"border-radius: 20px;")
+        self.number_input.setAlignment(Qt.AlignCenter)
+        self.message_now = QLabel(Form)
+        self.message_now.setObjectName(u"message_now")
+        self.message_now.setGeometry(QRect(80, 250, 240, 30))
+        self.message_now.setMinimumSize(QSize(240, 30))
+        self.message_now.setMaximumSize(QSize(240, 30))
+        font2 = QFont()
+        font2.setFamilies([u"Verdana"])
+        font2.setPointSize(10)
+        self.message_now.setFont(font2)
+        self.message_now.setStyleSheet(u"background-color: rgb(182, 182, 182);\n"
+"border-radius: 4px;")
+        self.message_now.setAlignment(Qt.AlignCenter)
+        self.button_guess = QPushButton(Form)
+        self.button_guess.setObjectName(u"button_guess")
+        self.button_guess.setGeometry(QRect(90, 320, 100, 50))
+        self.button_guess.setMinimumSize(QSize(100, 50))
+        self.button_guess.setMaximumSize(QSize(100, 50))
+        font3 = QFont()
+        font3.setFamilies([u"Verdana"])
+        font3.setPointSize(12)
+        self.button_guess.setFont(font3)
+        self.button_guess.setStyleSheet(u"background-color: rgb(130, 130, 130);\n"
+"border-radius: 5px;")
+        self.button_restart = QPushButton(Form)
+        self.button_restart.setObjectName(u"button_restart")
+        self.button_restart.setGeometry(QRect(210, 320, 100, 50))
+        self.button_restart.setMinimumSize(QSize(100, 50))
+        self.button_restart.setMaximumSize(QSize(100, 50))
+        self.button_restart.setFont(font3)
+        self.button_restart.setStyleSheet(u"background-color: rgb(130, 130, 130);\n"
+"border-radius: 5px;")
+        self.mode_combo = QComboBox(Form)
+        self.mode_combo.addItem("")
+        self.mode_combo.addItem("")
+        self.mode_combo.addItem("")
+        self.mode_combo.addItem("")
+        self.mode_combo.addItem("")
+        self.mode_combo.setObjectName(u"mode_combo")
+        self.mode_combo.setGeometry(QRect(90, 470, 100, 20))
+        self.mode_combo.setMinimumSize(QSize(100, 20))
+        self.mode_combo.setMaximumSize(QSize(100, 20))
+        font4 = QFont()
+        font4.setFamilies([u"Verdana"])
+        font4.setPointSize(8)
+        self.mode_combo.setFont(font4)
+        self.mode_combo.setStyleSheet(u"background-color: rgb(130, 130, 130);\n"
+"")
+        self.level_combo = QComboBox(Form)
+        self.level_combo.addItem("")
+        self.level_combo.addItem("")
+        self.level_combo.addItem("")
+        self.level_combo.setObjectName(u"level_combo")
+        self.level_combo.setGeometry(QRect(210, 470, 100, 20))
+        self.level_combo.setMinimumSize(QSize(100, 20))
+        self.level_combo.setMaximumSize(QSize(100, 20))
+        self.level_combo.setFont(font4)
+        self.level_combo.setStyleSheet(u"background-color: rgb(130, 130, 130);\n"
+"")
+        self.mode_label = QLabel(Form)
+        self.mode_label.setObjectName(u"mode_label")
+        self.mode_label.setGeometry(QRect(110, 450, 60, 20))
+        self.mode_label.setMinimumSize(QSize(60, 20))
+        self.mode_label.setMaximumSize(QSize(60, 20))
+        self.mode_label.setFont(font2)
+        self.mode_label.setAlignment(Qt.AlignCenter)
+        self.level_label = QLabel(Form)
+        self.level_label.setObjectName(u"level_label")
+        self.level_label.setGeometry(QRect(230, 450, 60, 20))
+        self.level_label.setMinimumSize(QSize(60, 20))
+        self.level_label.setMaximumSize(QSize(60, 20))
+        self.level_label.setFont(font2)
+        self.level_label.setAlignment(Qt.AlignCenter)
+        self.life_label = QLabel(Form)
+        self.life_label.setObjectName(u"life_label")
+        self.life_label.setGeometry(QRect(150, 140, 80, 20))
+        self.life_label.setMinimumSize(QSize(80, 20))
+        self.life_label.setMaximumSize(QSize(80, 20))
+        self.life_label.setFont(font2)
+        self.life_label.setAlignment(Qt.AlignCenter)
+        self.life_amount = QLabel(Form)
+        self.life_amount.setObjectName(u"life_amount")
+        self.life_amount.setGeometry(QRect(230, 140, 20, 20))
+        self.life_amount.setMinimumSize(QSize(20, 20))
+        self.life_amount.setMaximumSize(QSize(20, 20))
+        font5 = QFont()
+        font5.setFamilies([u"Verdana"])
+        font5.setPointSize(10)
+        font5.setBold(True)
+        self.life_amount.setFont(font5)
+        self.life_amount.setAlignment(Qt.AlignCenter)
+        self.button_start = QPushButton(Form)
+        self.button_start.setObjectName(u"button_start")
+        self.button_start.setGeometry(QRect(150, 380, 100, 50))
+        self.button_start.setMinimumSize(QSize(100, 50))
+        self.button_start.setMaximumSize(QSize(100, 50))
+        self.button_start.setFont(font3)
+        self.button_start.setStyleSheet(u"background-color: rgb(130, 130, 130);\n"
+"border-radius: 5px;")
+
+        self.retranslateUi(Form)
+
+        QMetaObject.connectSlotsByName(Form)
+    # setupUi
+
+    def retranslateUi(self, Form):
+        Form.setWindowTitle(QCoreApplication.translate("Form", u"Form", None))
+        self.home_background.setText("")
+        self.home_app.setText("")
+        self.home_background_2.setText("")
+        self.head_label.setText(QCoreApplication.translate("Form", u"Guess the Number!", None))
+        self.number_input.setText("")
+        self.message_now.setText(QCoreApplication.translate("Form", u"The number is less than xxxxx", None))
+        self.button_guess.setText(QCoreApplication.translate("Form", u"Guess!", None))
+        self.button_restart.setText(QCoreApplication.translate("Form", u"Restart!", None))
+        self.mode_combo.setItemText(0, QCoreApplication.translate("Form", u"EASY", None))
+        self.mode_combo.setItemText(1, QCoreApplication.translate("Form", u"NORMAL", None))
+        self.mode_combo.setItemText(2, QCoreApplication.translate("Form", u"HARD", None))
+        self.mode_combo.setItemText(3, QCoreApplication.translate("Form", u"LEGENDARY", None))
+        self.mode_combo.setItemText(4, QCoreApplication.translate("Form", u"IMPOSSIBLE", None))
+
+        self.level_combo.setItemText(0, QCoreApplication.translate("Form", u"100", None))
+        self.level_combo.setItemText(1, QCoreApplication.translate("Form", u"1000", None))
+        self.level_combo.setItemText(2, QCoreApplication.translate("Form", u"10000", None))
+
+        self.mode_label.setText(QCoreApplication.translate("Form", u"MODE", None))
+        self.level_label.setText(QCoreApplication.translate("Form", u"LEVEL", None))
+        self.life_label.setText(QCoreApplication.translate("Form", u"LIFE LEFT:", None))
+        self.life_amount.setText(QCoreApplication.translate("Form", u"0", None))
+        self.button_start.setText(QCoreApplication.translate("Form", u"START!", None))
+    # retranslateUi
+
